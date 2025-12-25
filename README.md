@@ -10,3 +10,6 @@ https://media.discordapp.net/attachments/770218923567218699/1453896774044356678/
 
 форма управление учениками
 https://media.discordapp.net/attachments/770218923567218699/1453896937064632440/image.png?ex=694f1e89&is=694dcd09&hm=f98d8392b471994ed469e858bfea3047ee4af403396af22a0ee065620ae66386&=&format=webp&quality=lossless&width=1709&height=864
+
+Форма расписание занятий 
+https://media.discordapp.net/attachments/770218923567218699/1453897396517081159/image.png?ex=694f1ef7&is=694dcd77&hm=648d1f6d0a47f5c8fca6f83a0af8c862bf8f313b57013fa2af32cc2c5f84a91f&=&format=webp&quality=lossless&width=550&height=263
