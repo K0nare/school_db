@@ -13,3 +13,6 @@ https://media.discordapp.net/attachments/770218923567218699/1453896937064632440/
 
 Форма расписание занятий 
 https://media.discordapp.net/attachments/770218923567218699/1453897396517081159/image.png?ex=694f1ef7&is=694dcd77&hm=648d1f6d0a47f5c8fca6f83a0af8c862bf8f313b57013fa2af32cc2c5f84a91f&=&format=webp&quality=lossless&width=550&height=263
+
+Форма системные настройки
+https://media.discordapp.net/attachments/770218923567218699/1453897730874413197/image.png?ex=694f1f47&is=694dcdc7&hm=0e59e1085994342645388a01c214cdd99de9ba26b16aa73dca3c8e4e873ceea9&=&format=webp&quality=lossless&width=1759&height=864
