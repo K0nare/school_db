@@ -1,0 +1,535 @@
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Страница логина */
+.login-page {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.school-logo {
+    font-size: 60px;
+    color: #4a6fa5;
+    margin-bottom: 10px;
+}
+
+/* Боковое меню */
+.sidebar {
+    background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
+    min-height: calc(100vh - 56px);
+    padding: 0;
+    color: white;
+}
+
+.sidebar .nav-link {
+    color: rgba(255,255,255,0.8);
+    padding: 12px 20px;
+    border-left: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+    border-left-color: #4a6fa5;
+}
+
+.sidebar .nav-link.active {
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+    border-left-color: #4a6fa5;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+/* Основной контент */
+.main-content {
+    padding: 20px;
+    min-height: calc(100vh - 56px);
+}
+
+/* Карточки */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Таблицы */
+.table {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.table th {
+    background-color: #f8f9fa;
+    border: none;
+    font-weight: 600;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Кнопки */
+.btn {
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #4a6fa5;
+    border-color: #4a6fa5;
+}
+
+.btn-primary:hover {
+    background-color: #3a5a85;
+    border-color: #3a5a85;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .main-content {
+        padding: 15px;
+    }
+}
+/* Дополнительные стили для страницы учеников */
+
+/* Аватарки */
+.avatar-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.avatar-primary {
+    background: linear-gradient(135deg, #4a6fa5, #2c3e50);
+}
+
+.avatar-success {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+}
+
+.avatar-warning {
+    background: linear-gradient(135deg, #ffc107, #e0a800);
+}
+
+.avatar-danger {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+}
+
+/* Карточки статистики */
+.stat-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Таблица */
+.table td {
+    vertical-align: middle;
+}
+
+/* Кнопки действий */
+.btn-action {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    transition: all 0.2s;
+}
+
+.btn-action:hover {
+    transform: scale(1.1);
+}
+
+/* Фильтры */
+.filter-card {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    border: 1px solid #dee2e6;
+}
+
+/* Badges */
+.badge-class {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.badge-class:hover {
+    opacity: 0.9;
+}
+
+/* Modal */
+.modal-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    .table-responsive {
+        border: none;
+    }
+    
+    .action-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .btn-action {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .stat-card .card-body {
+        padding: 1rem;
+    }
+}
+/* Дополнительные стили для журнала */
+
+/* Градации оценок */
+.grade-scale {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.grade-scale-item {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Календарь оценок */
+.calendar-day {
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.calendar-day:hover {
+    background-color: #e9ecef;
+}
+
+.calendar-day.has-grade {
+    background-color: #e8f4ff;
+    border: 1px solid #cfe2ff;
+}
+
+.calendar-day.today {
+    border: 2px solid #4a6fa5;
+}
+
+/* Таблица с полосами */
+.table-striped-custom tbody tr:nth-of-type(odd) {
+    background-color: rgba(74, 111, 165, 0.03);
+}
+
+/* Стили для модальных окон */
+.modal-content {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .grade-badge {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+    
+    .stat-card .card-body {
+        padding: 1rem;
+    }
+    
+    .filter-card .card-body {
+        padding: 1rem;
+    }
+    
+    .month-selector {
+        padding: 10px;
+    }
+}
+
+/* Печатные стили */
+@media print {
+    .navbar, .filter-card, .btn {
+        display: none !important;
+    }
+    
+    .card {
+        border: 1px solid #000 !important;
+        box-shadow: none !important;
+    }
+    
+    .table {
+        border: 1px solid #000;
+    }
+    
+    .table th, .table td {
+        border: 1px solid #000;
+    }
+}
+
+/* Темная тема (опционально) */
+@media (prefers-color-scheme: dark) {
+    .grade-badge {
+        opacity: 0.9;
+    }
+}
+
+/* Эффекты при наведении */
+.tr-hover-effect {
+    transition: all 0.2s;
+}
+
+.tr-hover-effect:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transform: translateX(2px);
+}
+/* Дополнительные стили для расписания */
+
+/* Анимация появления */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Стили для временных слотов */
+.time-slot {
+    position: relative;
+    min-height: 60px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: white;
+    transition: all 0.2s;
+}
+
+.time-slot:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.time-slot.occupied {
+    background: linear-gradient(135deg, #e8f4ff, #d1e7ff);
+    border-color: #b6d4fe;
+}
+
+.time-slot.free {
+    background: #f8f9fa;
+    border-style: dashed;
+    border-color: #adb5bd;
+}
+
+/* Перетаскивание */
+.draggable {
+    cursor: grab;
+    user-select: none;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+.drag-over {
+    border: 2px dashed var(--primary-color);
+    background-color: rgba(74, 111, 165, 0.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .timetable-cell {
+        min-height: 60px;
+        padding: 5px;
+        font-size: 0.85rem;
+    }
+    
+    .time-badge {
+        font-size: 0.8rem;
+        padding: 3px 8px;
+    }
+    
+    .lesson-item {
+        padding: 8px;
+    }
+    
+    .filter-panel .row > div {
+        margin-bottom: 10px;
+    }
+}
+
+/* Темная тема (опционально) */
+@media (prefers-color-scheme: dark) {
+    .schedule-card {
+        background-color: #2c3e50;
+        color: white;
+    }
+    
+    .lesson-item {
+        background-color: #34495e;
+        border-left-color: #4a6fa5;
+    }
+    
+    .time-badge {
+        background-color: #4a6fa5;
+        color: white;
+    }
+}
+
+/* Печатные стили */
+@media print {
+    .schedule-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+    
+    .lesson-item {
+        border: 1px solid #000;
+    }
+    
+    .btn, .modal, .no-print {
+        display: none !important;
+    }
+}
+
+/* Кастомные скроллбары */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Эффект выделения */
+.highlight {
+    background-color: #fff3cd !important;
+    border-color: #ffc107 !important;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+}
+
+/* Стили для конфликтов */
+.conflict-alert {
+    border: 2px solid var(--danger-color);
+    background-color: rgba(220, 53, 69, 0.1);
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+/* Зум для мобильных устройств */
+.timetable-cell .lesson-item {
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
+}
+
+/* Градиентные заголовки */
+.gradient-header {
+    background: linear-gradient(135deg, var(--primary-color), #2c3e50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
